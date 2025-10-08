@@ -11,7 +11,7 @@ public class ifCetakKRSNoPresensi {
             System.out.println("Pembayaran UKT Terverifikasi");
             System.out.println("Silahkan Cetak KRS");
         } else {
-            System.out.println("Silahkan Bayar ukt");
+            System.out.println("Registrasi ditolak Silahkan Lunasi UKT");
         }
 
     }
