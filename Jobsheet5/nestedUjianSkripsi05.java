@@ -10,6 +10,7 @@ public class nestedUjianSkripsi05 {
         int bimbinganp105 = faf.nextInt();
         System.out.println("Masukkan Jumlah log bimbingan pembimbing 2: ");
         int bimbinganp205 = faf.nextInt();
+        
         if (bebasKompen05.equalsIgnoreCase("ya")){
             if (bimbinganp105 >= 8 && bimbinganp205 >= 4) {
                 pesan05 = "Semua Syarat Terpenuhi Mahasiswa Boleh Mendaftar Ujian Skripsi";
@@ -23,6 +24,6 @@ public class nestedUjianSkripsi05 {
 
         }else{
             pesan05 = "Gagal Mahasiswa masih memiliki tanggungan kompen";
-        }
+        }System.out.println(pesan05);
     }
 }
