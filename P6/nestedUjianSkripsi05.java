@@ -25,5 +25,6 @@ public class nestedUjianSkripsi05 {
         }else{
             pesan05 = "Gagal Mahasiswa masih memiliki tanggungan kompen";
         }System.out.println(pesan05);
+        faf.close();
     }
 }

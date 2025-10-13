@@ -14,5 +14,6 @@ public class Tugas3perpus {
         } else {
             System.out.println("dilarang masuk");
         }
+        faf.close();
     }
 }

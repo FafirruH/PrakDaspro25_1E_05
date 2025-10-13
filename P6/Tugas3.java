@@ -20,5 +20,6 @@ public class Tugas3 {
         }else{
             System.out.println("akses ditolak");
         }
+        faf.close();
     }
 }

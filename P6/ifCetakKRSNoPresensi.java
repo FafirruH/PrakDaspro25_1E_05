@@ -16,6 +16,7 @@ public class ifCetakKRSNoPresensi {
         //}
         cetak05=uktLunas05 ? "pembayaran UKKT diverifikasi" + "silahkan cetak KRS dan minta Tanda tangan" : "maaf resigstrasi ditolak";
         System.out.println(cetak05);
+        faf.close();
 
     }
 }
