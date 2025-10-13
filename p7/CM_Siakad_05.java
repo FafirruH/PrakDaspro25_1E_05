@@ -33,22 +33,22 @@ public class CM_Siakad_05 {
         
         String hurufPancasila05;
         double ipPancasila05;
-        if (nilaiPancasila05 >= 80 && nilaiPancasila05 <= 100) {
+        if (nilaiPancasila05 > 80 && nilaiPancasila05 <= 100) {
             hurufPancasila05 = "A";
             ipPancasila05 = 4.0;
-        } else if (nilaiPancasila05 >= 73 && nilaiPancasila05 < 80) {
+        } else if (nilaiPancasila05 > 73 && nilaiPancasila05 <= 80) {
             hurufPancasila05 = "B+";
             ipPancasila05 = 3.5;
-        } else if (nilaiPancasila05 >= 65 && nilaiPancasila05 < 73) {
+        } else if (nilaiPancasila05 > 65 && nilaiPancasila05 <= 73) {
             hurufPancasila05 = "B";
             ipPancasila05 = 3.0;
-        } else if (nilaiPancasila05 >= 60 && nilaiPancasila05 < 65) {
+        } else if (nilaiPancasila05 > 60 && nilaiPancasila05 <= 65) {
             hurufPancasila05 = "C+";
             ipPancasila05 = 2.5;
-        } else if (nilaiPancasila05 >= 50 && nilaiPancasila05 < 60) {
+        } else if (nilaiPancasila05 > 50 && nilaiPancasila05 <= 60) {
             hurufPancasila05 = "C";
             ipPancasila05 = 2.0;
-        } else if (nilaiPancasila05 >= 39 && nilaiPancasila05 < 50) {
+        } else if (nilaiPancasila05 > 39 && nilaiPancasila05 <= 50) {
             hurufPancasila05 = "D";
             ipPancasila05 = 1.0;
         } else {
@@ -58,22 +58,22 @@ public class CM_Siakad_05 {
         
         String hurufDaspro05;
         double ipDaspro05;
-        if (nilaiDaspro05 >= 80 && nilaiDaspro05 <= 100) {
+        if (nilaiDaspro05 > 80 && nilaiDaspro05 <= 100) {
             hurufDaspro05 = "A";
             ipDaspro05 = 4.0;
-        } else if (nilaiDaspro05 >= 73 && nilaiDaspro05 < 80) {
+        } else if (nilaiDaspro05 > 73 && nilaiDaspro05 <= 80) {
             hurufDaspro05 = "B+";
             ipDaspro05 = 3.5;
-        } else if (nilaiDaspro05 >= 65 && nilaiDaspro05 < 73) {
+        } else if (nilaiDaspro05 > 65 && nilaiDaspro05 <= 73) {
             hurufDaspro05 = "B";
             ipDaspro05 = 3.0;
-        } else if (nilaiDaspro05 >= 60 && nilaiDaspro05 < 65) {
+        } else if (nilaiDaspro05 > 60 && nilaiDaspro05 <= 65) {
             hurufDaspro05 = "C+";
             ipDaspro05 = 2.5;
-        } else if (nilaiDaspro05 >= 50 && nilaiDaspro05 < 60) {
+        } else if (nilaiDaspro05 > 50 && nilaiDaspro05 <= 60) {
             hurufDaspro05 = "C";
             ipDaspro05 = 2.0;
-        } else if (nilaiDaspro05 >= 39 && nilaiDaspro05 < 50) {
+        } else if (nilaiDaspro05 > 39 && nilaiDaspro05 <= 50) {
             hurufDaspro05 = "D";
             ipDaspro05 = 1.0;
         } else {
@@ -83,22 +83,22 @@ public class CM_Siakad_05 {
         
         String hurufBIG05;
         double ipBIG05;
-        if (nilaiBIG05 >= 80 && nilaiBIG05 <= 100) {
+        if (nilaiBIG05 > 80 && nilaiBIG05 <= 100) {
             hurufBIG05 = "A";
             ipBIG05 = 4.0;
-        } else if (nilaiBIG05 >= 73 && nilaiBIG05 < 80) {
+        } else if (nilaiBIG05 > 73 && nilaiBIG05 <= 80) {
             hurufBIG05 = "B+";
             ipBIG05 = 3.5;
-        } else if (nilaiBIG05 >= 65 && nilaiBIG05 < 73) {
+        } else if (nilaiBIG05 > 65 && nilaiBIG05 <= 73) {
             hurufBIG05= "B";
             ipBIG05 = 3.0;
-        } else if (nilaiBIG05 >= 60 && nilaiBIG05 < 65) {
+        } else if (nilaiBIG05 > 60 && nilaiBIG05 <= 65) {
             hurufBIG05 = "C+";
             ipBIG05 = 2.5;
-        } else if (nilaiBIG05 >= 50 && nilaiBIG05 < 60) {
+        } else if (nilaiBIG05 > 50 && nilaiBIG05 <= 60) {
             hurufBIG05 = "C";
             ipBIG05 = 2.0;
-        } else if (nilaiBIG05 >= 39 && nilaiBIG05 < 50) {
+        } else if (nilaiBIG05 > 39 && nilaiBIG05 <= 50) {
             hurufBIG05 = "D";
             ipBIG05 = 1.0;
         } else {
