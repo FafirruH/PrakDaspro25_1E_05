@@ -15,7 +15,6 @@ public class siakadwhile {
             }
             if (nilai05>80&&nilai05<=100) {
                 System.out.println("Nilai Mahasiswa ke-"+(i+1)+" Adalah A");
-                System.out.println("Bagus, Pertahankan Nilainya");
             }else if (nilai05>73&&nilai05<=80){
                 System.out.println("Nilai Mahasiswa ke-"+(i+1)+" Adalah B+");
             }else if (nilai05>65&&nilai05<=73){
