@@ -9,7 +9,9 @@ public class arrayNilai05 {
             nilaiAkhir05[i]=faf.nextInt();
         }for (int i = 0; i < nilaiAkhir05.length; i++) {
             if (nilaiAkhir05[i]>70) {
-                System.out.println("Mahasiswa ke- "+i+"Lulus!");
+                System.out.println("Mahasiswa ke- "+i+" Lulus!");
+            }else{
+                System.out.println("Mahasiswa ke- "+i+" Tidak Lulus");
             }
         }
         faf.close();
