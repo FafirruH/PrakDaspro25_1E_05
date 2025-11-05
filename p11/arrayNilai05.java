@@ -7,8 +7,10 @@ public class arrayNilai05 {
         for (int i = 0; i < nilaiAkhir05.length; i++) {
             System.out.print("Masukkan Nilai Akhir ke- ");
             nilaiAkhir05[i]=faf.nextInt();
-        }for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai Akhir ke- "+i+"Adalah "+nilaiAkhir05[i]);
+        }for (int i = 0; i < nilaiAkhir05.length; i++) {
+            if (nilaiAkhir05[i]>70) {
+                System.out.println("Mahasiswa ke- "+i+"Lulus!");
+            }
         }
         faf.close();
     }
