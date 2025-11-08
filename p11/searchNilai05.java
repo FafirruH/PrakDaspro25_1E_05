@@ -17,12 +17,10 @@ public class searchNilai05 {
             if (arrNilai05[i]==key05) {
                 hasil05=i+1;
                 System.out.println("Nilai "+key05+" Ketemu, Merupakan Nilai Mahasiswa ke-"+hasil05);
-                break;
             }else{
                 System.out.println("Nilai Tidak Ditemukan");
-                break;
-            }
         }
         faf.close();
     }
+}
 }
