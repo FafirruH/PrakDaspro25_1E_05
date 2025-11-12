@@ -10,7 +10,7 @@ public class bioskop05 {
         penonton05[2][0]="Eka";
         penonton05[2][1]="Farhan";
         penonton05[3][0]="Gisel";
-        penonton05[3][0]="Hana" ;
+        penonton05[3][1]="Hana" ;
         System.out.printf("%s \t %s\n",penonton05[0][0],penonton05[0][1]);
         System.out.printf("%s \t %s\n",penonton05[1][0],penonton05[1][1]);
         System.out.printf("%s \t %s\n",penonton05[2][0],penonton05[2][1]);
@@ -18,6 +18,10 @@ public class bioskop05 {
         System.out.println(penonton05.length);
         for (String[] baris05 : penonton05) {
             System.out.println("Panjang Baris : "+baris05.length);
+        }
+        System.out.println("Penonton Pada Baris ke-3: ");
+        for (int i = 0; i < penonton05[2].length; i++) {
+            System.out.println(penonton05[2][i]);
         }
     }
 }
