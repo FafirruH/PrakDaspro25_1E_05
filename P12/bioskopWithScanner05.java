@@ -36,6 +36,7 @@ public class bioskopWithScanner05 {
                             continue;                        
                         }else if (penonton05[baris05-1][kolom05-1]!=null) {
                             System.out.println("Kursi Sudah Dipesan");
+                            continue;
                         }
                         penonton05[baris05 - 1][kolom05 - 1] = nama05;
                         System.out.print("Input penonton lain? (y/n): ");
@@ -51,12 +52,15 @@ public class bioskopWithScanner05 {
                     System.out.println("\nDAFTAR PENONTON");
                     for (int i = 0; i < penonton05.length; i++) {
                         for (int j = 0; j < penonton05[i].length; j++) {
-                            System.out.print(penonton05[i][j] + "\t");
+                            if (penonton05[i][j] == null) {
+                                System.out.print("*\t");
+                            } else {
+                                System.out.print(penonton05[i][j] + "\t");
+                            }
                         }
                         System.out.println();
                     }
                     break;
-
                 case 3:
                     System.out.println("Program selesai.");
                     break;
