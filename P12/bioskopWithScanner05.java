@@ -28,6 +28,12 @@ public class bioskopWithScanner05 {
                         System.out.print("Masukkan Kolom (1-2): ");
                         kolom05 = faf.nextInt();
                         faf.nextLine();
+                        if (baris05>4||baris05<1) {
+                            System.out.println("Baris tidak tersedia, Masukkan Ulang");
+                            continue;
+                        }else if(kolom05>2||kolom05<1){
+                            System.out.println("Kolom Tidak tersedia, Masukkan Ulang");
+                            continue;                        }
                         penonton05[baris05 - 1][kolom05 - 1] = nama05;
                         System.out.print("Input penonton lain? (y/n): ");
                         next05 = faf.next();
