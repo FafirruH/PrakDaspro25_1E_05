@@ -15,5 +15,10 @@ public class bioskop05 {
         System.out.printf("%s \t %s\n",penonton05[1][0],penonton05[1][1]);
         System.out.printf("%s \t %s\n",penonton05[2][0],penonton05[2][1]);
         System.out.printf("%s \t %s\n",penonton05[3][0],penonton05[3][1]);
+        System.out.println(penonton05.length);
+        System.out.println(penonton05[0].length);
+        System.out.println(penonton05[1].length);
+        System.out.println(penonton05[2].length);
+        System.out.println(penonton05[3].length);
     }
 }
