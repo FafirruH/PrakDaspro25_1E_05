@@ -14,6 +14,15 @@ public class siakad05 {
             }
             System.out.println("Nilai Rata-Rata: "+totalPerSiswa05/3);
         } 
+        System.out.println("\n==================================");
+        System.out.println("Rata-Rata Nilai Setiap Mata Kuliah");
+        for (int j = 0; j < 3; j++) {
+            double totalPerMatkul05=0;
+            for (int i = 0; i < 4; i++) {
+                totalPerMatkul05+=nilai05[i][j];
+            }
+            System.out.println("Mata Kuliah"+(j+1)+": "+totalPerMatkul05/4);
+        }
         faf.close();
     }
     
