@@ -1,7 +1,10 @@
 package P14;
+
 import java.util.Scanner;
+
 public class Kafe05 {
     static Scanner faf = new Scanner(System.in);
+
     public static void menu05(String namaPelanggan05, boolean isMember05, String kodePromo05) {
         System.out.println("Selamat Datang, " + namaPelanggan05 + "!");
         if (isMember05) {
@@ -24,13 +27,14 @@ public class Kafe05 {
         System.out.println("===========================");
         System.out.println("Silahkan pilih menu yang anda inginkan.");
     }
+
     public static int hitungTotalHarga05(int pilihanMenu05, int banyakItem05, String kodePromo05) {
-        int[] hargaItem05 = {15000, 20000, 22000, 12000, 10000, 18000};
+        int[] hargaItem05 = { 15000, 20000, 22000, 12000, 10000, 18000 };
+        int hargaTotal05 = hargaItem05[pilihanMenu05 - 1] * banyakItem05;
         if (pilihanMenu05 < 1 || pilihanMenu05 > 6) {
             System.out.println("Menu tidak valid!");
             return 0;
         }
-        int hargaTotal05 = hargaItem05[pilihanMenu05 - 1] * banyakItem05;
         if (kodePromo05.equalsIgnoreCase("DISKON50")) {
             hargaTotal05 *= 0.5;
         } else if (kodePromo05.equalsIgnoreCase("DISKON30")) {
@@ -40,13 +44,22 @@ public class Kafe05 {
         }
         return hargaTotal05;
     }
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
         menu05("Budi", true, "DISKON50");
-        System.out.print("\nMasukkan nomor menu yang Anda ingin pesan: ");
-        int pilihanMenu05 = faf.nextInt();
-        System.out.print("Masukkan jumlah item yang ingin dipesan: ");
-        int banyakItem05 = faf.nextInt();
-        int totalHarga05 = hitungTotalHarga05(pilihanMenu05, banyakItem05, "DISKON50");
-        System.out.println("Total harga untuk pesanan Anda: Rp" + totalHarga05);
+        String pesan05;
+        int jumlah05=0;
+        do {
+            System.out.print("\nMasukkan nomor menu yang Anda ingin pesan: ");
+            int pilihanMenu05 = faf.nextInt();
+            System.out.print("Masukkan jumlah item yang ingin dipesan: ");
+            int banyakItem05 = faf.nextInt();
+            int totalHarga05 = hitungTotalHarga05(pilihanMenu05, banyakItem05, "DISKON50");
+            System.out.println("Total harga untuk pesanan Anda: Rp" + totalHarga05);
+            jumlah05+=totalHarga05;
+            System.out.print("Apakah Anda ingin memesan lagi (y/t) : ");
+            pesan05=faf.next();
+        } while (pesan05.equalsIgnoreCase("y"));
+        System.out.println("Total Pesanan Anda adalah : "+jumlah05);
     }
 }
