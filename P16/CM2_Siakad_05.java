@@ -139,6 +139,24 @@ public class CM2_Siakad_05{
         else if (nilai05>50)
             return "C";
         else if (nilai05>39)
+        System.out.println("---------------------------------------------------------------------");
+    }
+    static String konversiHuruf05(double nilai05) {
+        if (nilai05>=85)
+            return "A";
+        else if (nilai05>=80)
+            return "A-";
+        else if (nilai05>=75)
+            return "B+";
+        else if (nilai05>=70)
+            return "B";
+        else if (nilai05>=65)
+            return "B-";
+        else if (nilai05>=60)
+            return "C+";
+        else if (nilai05>=55)
+            return "C";
+        else if (nilai05>=45)
             return "D";
         else
             return "E";
