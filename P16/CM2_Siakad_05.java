@@ -105,6 +105,11 @@ public class CM2_Siakad_05{
                 pancasilaMinC05=false;
             }
         }
+        int terendah05=100;
+        for (int i = 0; i < nilai05.length; i++) {
+            if (nilai05[i] < terendah05) {
+                terendah05 = (int)nilai05[i];
+        }
         double ip05=totalBobot05/totalSks05;
         System.out.println("---------------------------------------------------------------------");
         System.out.println("Total SKS        : "+totalSks05);
@@ -117,24 +122,23 @@ public class CM2_Siakad_05{
             status05 = "TIDAK LULUS SEMESTER";
         }
         System.out.println("Status Semester  : " + status05);
+        System.out.println("NIlai Terendah : "+terendah05);
+
         System.out.println("---------------------------------------------------------------------");
     }
+    }
     static String konversiHuruf05(double nilai05) {
-        if (nilai05>=85)
+        if (nilai05>80)
             return "A";
-        else if (nilai05>=80)
-            return "A-";
-        else if (nilai05>=75)
+        else if (nilai05>73)
             return "B+";
-        else if (nilai05>=70)
+        else if (nilai05>65)
             return "B";
-        else if (nilai05>=65)
-            return "B-";
-        else if (nilai05>=60)
+        else if (nilai05>60)
             return "C+";
-        else if (nilai05>=55)
+        else if (nilai05>50)
             return "C";
-        else if (nilai05>=45)
+        else if (nilai05>39)
             return "D";
         else
             return "E";
